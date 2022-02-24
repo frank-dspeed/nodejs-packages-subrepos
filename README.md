@@ -1,23 +1,26 @@
-# Tropo Voicemail
+# Example that Demos how to send Voicemails via Tropo API
 
 This app is designed to replace your GSM phone's voicemail. Instead of a
 phone-based voicemail inbox, messages are transcribed and emailed with a link
 to the audio file.
 
-Please note that I only spent a few hours writing this, so there may be bugs,
-and it's just a starting point that could be developed a lot further.
+## Tropo migration timeline
+Tropo stated that the wind-down of their services and support began in October 2018 and would continue in phases. Tropo has notified all of their contracted customers, and their developer program and credit card customers have received or should expect a notification covering timelines and next steps.
+
+To migrate your communication applications without any interruption, we recommend migrating your logic to Twilio as soon as possible. This guide details how to migrate from Tropo's SMS or Voice APIs to Twilio.
 
 ## Requirements
 
 * [Heroku](http://heroku.com) account
-* [Tropo](http://www.tropo.com) account
+* <s>Tropo http://www.tropo.com account</s>
+* [Twilio](http://www.twilio.com) account
 * FTP server with HTTP access
 * GSM phone with call forwarding
 
 ## Setup
 
 ### Heroku
-
+```
     git clone git@github.com:titanous/tropo-voicemail.git
     cd tropo-voicemail
     heroku create
@@ -25,8 +28,9 @@ and it's just a starting point that could be developed a lot further.
     heroku config:add EMAIL=you@email.com
     heroku config:add VOICEMAIL_URL=http://yourserver.com/voicemail/
     git push heroku master
+```
 
-### Tropo
+### <s>Tropo</s>
 
 Create a new application on Tropo, and point it to a new Hosted File with the
 contents of `tropo-voicemail.rb`. Make sure you change the constants at the top
@@ -57,5 +61,5 @@ forwards, use these codes:
     ##62#
 
 ## Copyright
-
-(c) 2010 Jonathan Rudenberg; Licensed under the MIT license, see `LICENSE`
+(c) ECMAScript Version - 2010+ Frank Lemanschik; Licensed under the https://github.com/frank-dspeed/licenses / license, see `LICENSE`
+(c) Inital Ruby Version - 2010 Jonathan Rudenberg; Licensed under the MIT license, see `LICENSE`
