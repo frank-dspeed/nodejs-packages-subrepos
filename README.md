@@ -1,10 +1,18 @@
-# Example that Demos how to send Voicemails via Tropo API
+# NodeJS - Twilio API - Voice to transcribed email with reference to the Audio
 
-This app is designed to replace your GSM phone's voicemail. Instead of a
+replaces GSM phone's voicemail. Instead of a
 phone-based voicemail inbox, messages are transcribed and emailed with a link
 to the audio file.
 
-## Tropo migration timeline
+## Why forked? 
+At the time of forking that project i was not fully aware that this is only some glue code to implement a simple API based workflow now 12 years later
+i would easy write such stuff in minuts. I also was not aware of Tropo now i am able to run even own Voip servers based on Asterisk. 
+
+I Take this Codebase as example and rewrite it in NodeJS after that i will delete this old code and let it die. 
+
+## Tropo Shutdown
+The original Code was based on tropo a voip provider with a great api now replaced by twilio
+
 Tropo stated that the wind-down of their services and support began in October 2018 and would continue in phases. Tropo has notified all of their contracted customers, and their developer program and credit card customers have received or should expect a notification covering timelines and next steps.
 
 To migrate your communication applications without any interruption, we recommend migrating your logic to Twilio as soon as possible. This guide details how to migrate from Tropo's SMS or Voice APIs to Twilio.
